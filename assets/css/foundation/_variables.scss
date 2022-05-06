@@ -1,0 +1,27 @@
+$dark_1: #333;
+$dark_2: #999;
+
+$base_color0: rgba(255, 255, 255, 0.581);
+$base_color1: #fff;
+$base_color2: #fce38a;
+$base_color3: #efd889;
+$base_color4: #f38181;
+$base_color5: #95e1d3;
+
+
+$font_1: 'Montserrat', sans-serif;
+$font_2: 'Kaushan Script', cursive;
+$font_3: 'Roboto', sans-serif;
+
+$height_max: 1000px;
+
+$padding: 1rem;
+
+$width_max_1: 1200px;
+$width_max_2: 900px;
+$width_max_3: 600px;
+
+
+$marging_max_1: calc((100% - #{$width_max_1}) / 2);
+$marging_max_2: calc((100% - #{$width_max_2}) / 2);
+$marging_max_3: calc((100% - #{$width_max_3}) / 2);

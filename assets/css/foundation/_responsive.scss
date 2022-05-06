@@ -1,0 +1,28 @@
+@import './variables';
+
+@media (max-width: 1400px) {
+    
+}
+
+
+@media (max-width: 1200px) {
+    body{
+        .hero-row{
+            div.hero-column{
+                width: $width_max_2;
+                margin-left: $marging_max_2;
+            }
+        }
+    }   
+}
+
+@media (max-width: 1000px) {
+    body {
+        .hero-row {
+            div.hero-column {
+                width: $width_max_3;
+                margin-left: $marging_max_3;
+            }
+        }
+    }
+}
