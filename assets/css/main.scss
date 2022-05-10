@@ -3,21 +3,23 @@
 @import 'foundation/base';
 @import './foundation/responsive';
 @import 'foundation/variables';
+
 html{
     font-size: 15px;
 }
+
 body{
     
     // min-height: 100vh;
     font-family: $font_1;
     width: 100%;
-    // overflow: hidden;
+    overflow:  hidden scroll;
 
     .hero-row{
         width: 100%;
-        min-height: 100vh;
-        overflow: hidden;
-        background-color: rgb(255, 111, 200);
+        // min-height: fit-content;
+        // overflow: hidden;
+        
         background-image: url(../images/hero/MoGo_FREE_Template_by_Laaqiq_01.jpg), linear-gradient($base_color4, $base_color2);
         background-size: auto;
         background-position:top;
@@ -27,18 +29,16 @@ body{
             padding: $padding 0;
             width: $width_max_1;
             margin-left: $marging_max_1;
-            height: $height_max;
+            // height:max-content;
             position: relative;
         }
     }
     .base-row {
-        width: 100%;
+        // width: 100%;
         min-height: 100vh;
         overflow: hidden;
-        background-size: auto;
-        background-position: top;
-        background-repeat: no-repeat;
-
+        
+        // background-color: rgba(150, 255, 255, 0.477);
         .base-column {
             padding: $padding 0;
             width: $width_max_1;
@@ -51,6 +51,45 @@ body{
 }
 
 
+.section-title{
+    margin-top: 5rem;
+    text-align: center;
+    color: $dark_1;
+    position: relative;
+    p{
+        &:first-child{
+            font-family: $font_2;
+            font-size: 1.5rem; 
+            color: $dark_1; 
+        } 
+    }
+    h2{
+        display: block;
+        font-family: $font_1;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        margin-bottom: 6rem;
+        &::after{
+            content: "";
+            display: block;
+            width: 5rem;
+            height: 0.2rem;
+            margin-top: 2.6rem;
+            margin-bottom: 2.6rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $base_color4;
+        }
+        +p{   
+            font-family: $font_3;
+            color: $dark_2;
+            margin-bottom: 6rem;
+            @include wd40(8, 2);
+        }
+    } 
+}
+
 
 .top-bar{
     * {
@@ -62,13 +101,13 @@ body{
         font-size: 2rem;
         font-weight: bold;
         color: $base_color1;
-        width: 45%;
+        width: 30%;
     }
     nav{
         >* {
             margin-left: 2.5rem;
         }
-        width: 55%;
+        width: 70%;
         text-align: right;
         
         a{
@@ -83,13 +122,13 @@ body{
             }
         }
         a:hover, a[data-id='1']{
-            border-bottom: 0.1rem solid $base_color2;
+            border-bottom: 0.15rem solid $base_color2;
         } 
     }
     .buterbrodas {
         display: none;
         text-align: right;
-        width: 55%;
+        width: 70%;
         &:hover{
             color: $base_color3;
         }
@@ -130,45 +169,29 @@ body{
    } 
 
    a{
+       font-size: 0.8rem;
        font-weight: bold;
        text-decoration: none;
+       text-transform: uppercase;
        color: $base_color1;
-       padding: 0.6rem 1.1rem;
-       border: 0.1rem solid $base_color1;
+       padding: 0.6rem 1.4rem;
+       border: 0.2rem solid $base_color1;
 
        &:hover{
             background-color: $base_color3;
         }
    }
-//    a::before {
-//         display: block;
-//         content: "";
-//         position: relative;
-//         width: 100px;
-//         height: 0.2rem;
-//         background-color: #fff;
-//         top: -74px;
-//    }
 }
 
-@mixin page_line{
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 0.2rem;
-    background-color: $base_color0;
 
-    position: absolute;
-    bottom: 3rem;
-}
 
 
 .pages-wrapper{
     width: 100%;
     font-size: 0;
     margin-top: 10rem;
-    position: absolute;
-
+    
+    display: block;
     // bottom: 7.5rem;
     div{
         color: $base_color1;
@@ -179,11 +202,14 @@ body{
         cursor: pointer;
        p{
            display: inline-block;
+           text-transform: uppercase;
            &:first-child{
             //    margin-right: 2rem;
                font-weight: bold;
            }
-           
+           +p{
+               font-size: 0.7rem;
+           }
 
        }
        & + div{
@@ -192,16 +218,7 @@ body{
        
 
        &::before {
-           @include page_line;
-            // content: '';
-            // display: inline-block;
-            // width: 100%;
-            // height: 0.2rem;
-            // background-color: $base_color0;
-            
-            // position: absolute;
-            // bottom: 3rem;
-           
+           @include page_line;    
        }
        &:hover{
                 color: $base_color1;
@@ -216,5 +233,25 @@ body{
                         left: 0;
                 }
         }  
+    }
+}
+
+
+.stories-wrapper > {
+    div{
+        display: inline-block;
+        // @include wd40(3.6, 0.1);
+        width: 33%;
+        overflow: hidden;
+        cursor: pointer;
+        background: linear-gradient(#e66465, #9198e5);
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+        &:hover{
+            
+        }
     }
 }

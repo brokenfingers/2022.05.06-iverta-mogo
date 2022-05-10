@@ -30,8 +30,15 @@
                 font-size: 6rem;
                 @include wd40(12, 1);
             }
+            nav {
+                        >* {
+                            margin-left: 1.5rem;
+                        }
+                    }
+
         }
     }
+        
 }
 
 @media (max-width: 800px) {
@@ -53,6 +60,10 @@
             }
         }
     }
+    .section-title{
+        @include wd40(8, 2);
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -62,10 +73,18 @@
                 width: 400px;
                 margin-left: calc(50% - 200px);
             }
+            .welcome-wrapper{
+                p{
+                   font-size: 2rem; 
+                }
+            }
             h1{
                 font-size: 4rem;
                 @include wd40(6, 3);
             }
         }
+    }
+    .section-title {
+        @include wd40(4, 4);
     }
 }
