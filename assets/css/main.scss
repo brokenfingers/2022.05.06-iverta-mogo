@@ -241,17 +241,38 @@ body{
     div{
         display: inline-block;
         // @include wd40(3.6, 0.1);
-        width: 33%;
-        overflow: hidden;
+        width: 32%;
+        +div{
+            margin-left: 1.5%;
+        }
+        height: 100%;
+        position: relative;
         cursor: pointer;
-        background: linear-gradient(#e66465, #9198e5);
+        // overflow: hidden;
+        cursor: pointer;
+        background-color: $base_color5;
 
         img{
             width: 100%;
             height: auto;
-        }
-        &:hover{
+            &:first-child {
+                position: absolute;
+                right: 0.7rem;
+                bottom: 0.7rem;
+                filter: opacity(0);
+            }
             
         }
+        &:hover{
+            img{
+                &:first-child{
+                    filter: opacity(1);
+                }
+                +img{
+                    filter: opacity(0);
+                }
+            }
+        }
+        
     }
 }
