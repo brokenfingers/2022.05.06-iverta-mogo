@@ -1,11 +1,13 @@
 @import './variables';
 
 @media (max-width: 1400px) {
-    
+   
 }
 
 
-@media (max-width: 1200px) {
+
+
+@media (max-width: 1300px) {
     body{
         .hero-row{
             div.hero-column{
@@ -17,11 +19,52 @@
 }
 
 @media (max-width: 1000px) {
+    
     body {
         .hero-row {
             div.hero-column {
                 width: $width_max_3;
                 margin-left: $marging_max_3;
+            }
+            h1{
+                font-size: 6rem;
+                @include wd40(12, 1);
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        .hero-row {
+            div.hero-column {
+                width: $width_max_4;
+                margin-left: $marging_max_4;
+            }
+            nav{
+                display: none;
+            }
+            .buterbrodas{
+                display: inline-block;
+            }
+            h1{
+                font-size: 5rem;
+                @include wd40(8, 2);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        .hero-row {
+            div.hero-column {
+                width: 400px;
+                margin-left: calc(50% - 200px);
+            }
+            h1{
+                font-size: 4rem;
+                @include wd40(6, 3);
             }
         }
     }

@@ -20,8 +20,24 @@ $padding: 1rem;
 $width_max_1: 1200px;
 $width_max_2: 900px;
 $width_max_3: 600px;
+$width_max_4: 500px;
 
 
 $marging_max_1: calc((100% - #{$width_max_1}) / 2);
 $marging_max_2: calc((100% - #{$width_max_2}) / 2);
 $marging_max_3: calc((100% - #{$width_max_3}) / 2);
+$marging_max_4: calc((100% - #{$width_max_4}) / 2);
+
+
+$fnt_size_1: 7rem;
+
+
+
+@mixin wd40( $width_of_12 , $margin_of_12) {
+    $one_of_12: calc(100% / 12);
+
+    $width_size:  calc(#{$one_of_12} * #{$width_of_12});
+    width: $width_size;
+
+    margin-left: calc(#{$one_of_12} * #{$margin_of_12});
+}
