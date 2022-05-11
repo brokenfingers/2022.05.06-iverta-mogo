@@ -1,0 +1,27 @@
+.facts-row {
+    background-color: $base_color5;
+    font-size: 0;
+    padding: 3rem;
+
+    .base-column {
+        .number-wrapper {
+            text-align: center;
+            display: inline-block;
+            font-family: $font_1;
+            color: $base_color1;
+            @include wd40(2.4, 0);
+            font-size: 0.8rem;
+            vertical-align: top;
+
+            p {
+                text-transform: uppercase;
+
+                &:first-child {
+                    font-size: 4rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+}

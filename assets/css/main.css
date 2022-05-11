@@ -3196,10 +3196,6 @@ body, body * {
   }
 }
 
-html {
-  font-size: 14px;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -3321,7 +3317,8 @@ body .base-row .base-column {
   height: 1rem;
 }
 
-.top-bar nav a:hover, .top-bar nav a[data-id='1'] {
+.top-bar nav a:hover,
+.top-bar nav a[data-id='1'] {
   border-bottom: 0.15rem solid #fce38a;
 }
 
@@ -3603,5 +3600,9 @@ body .base-row .base-column {
   -webkit-filter: opacity(0.3);
           filter: opacity(0.3);
   bottom: 33%;
+}
+
+html {
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */
