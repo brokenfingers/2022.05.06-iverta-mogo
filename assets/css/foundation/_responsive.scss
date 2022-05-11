@@ -86,9 +86,26 @@
                     margin-bottom: 4rem;
                 }
             }
+            
+                
+         
+            
         }
-        
-        
+        .facts-row {
+            .base-column {
+                .number-wrapper {
+                    font-size: 0.8rem;
+                    p {
+                        &:first-child {
+                            font-size: 2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+            }
+        }
+                
     }
     .section-title{
         // @include wd40(10, 1);
@@ -119,6 +136,22 @@
                     @include wd40(8, 2);
                     margin-bottom: 4rem;
                 }
+            }
+        }
+        .facts-row {
+            .base-column {
+                .number-wrapper {
+                    font-size: 1rem;
+                @include wd40(8, 2);
+                margin-bottom: 2rem;
+                    p {
+                        &:first-child {
+                            font-size: 4rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
             }
         }
     }
