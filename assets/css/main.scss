@@ -5,7 +5,7 @@
 @import 'foundation/variables';
 
 html{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 body{
@@ -98,7 +98,7 @@ body{
     font-size: 0;
     margin-bottom: 6rem;
     div{
-        font-size: 2rem;
+        font-size: 2.14rem;
         font-weight: bold;
         color: $base_color1;
         width: 30%;
@@ -112,13 +112,17 @@ body{
         
         a{
             text-transform: uppercase;
-            font-size: 0.75rem;
+            font-size: $font_size_1;
             color: $base_color1;
             text-decoration: none;
             padding-bottom: 0.6rem;
             width: max-content;
             &:first-child{
                 margin-left: 0;
+            }
+            img{
+                width: $font_size_1;
+                height: $font_size_1;
             }
         }
         a:hover, a[data-id='1']{
@@ -139,20 +143,20 @@ body{
 }
 
 .welcome-wrapper{
-    width: 800px;
-    margin-left: calc(50% - 400px);
+    // width: 800px;
+    // margin-left: calc(50% - 400px);
     text-align: center;
     p{
         color:$base_color1;
         font-family: $font_2;
-        font-size: 3rem;
+        font-size: 5.1rem;
     }
    h1{
        text-transform:uppercase;
-       font-size: $fnt_size_1;
+       font-size: 10rem;
        color: $base_color1;
-       max-width: 80%;
-       @include wd40(9, 1.5);
+    //    max-width: 80%;
+       @include wd40(10, 1);
        font-weight: bold;
        margin-bottom: 8rem;
        position: relative;
@@ -171,7 +175,7 @@ body{
    } 
 
    a{
-       font-size: 0.8rem;
+       font-size: $font_size_1;
        font-weight: bold;
        text-decoration: none;
        text-transform: uppercase;
@@ -208,9 +212,10 @@ body{
            &:first-child{
             //    margin-right: 2rem;
                font-weight: bold;
+                font-size: calc(#{$font_size_1} + 0.2rem);
            }
            +p{
-               font-size: 0.7rem;
+               font-size: $font_size_1;
            }
 
        }
@@ -340,9 +345,10 @@ body{
             font-family: $font_1;
             color: $base_color1;
             @include wd40(2.4, 0);
-            font-size: 1rem;
+            font-size: 0.8rem;
             vertical-align: top;
             p{
+                text-transform: uppercase;
                 &:first-child{
                     font-size: 4rem;
                     font-weight: bold;

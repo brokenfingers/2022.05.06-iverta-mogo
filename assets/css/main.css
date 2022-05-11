@@ -3197,7 +3197,7 @@ body, body * {
 }
 
 html {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 body {
@@ -3286,7 +3286,7 @@ body .base-row .base-column {
 }
 
 .top-bar div {
-  font-size: 2rem;
+  font-size: 2.14rem;
   font-weight: bold;
   color: #fff;
   width: 30%;
@@ -3303,7 +3303,7 @@ body .base-row .base-column {
 
 .top-bar nav a {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #fff;
   text-decoration: none;
   padding-bottom: 0.6rem;
@@ -3314,6 +3314,11 @@ body .base-row .base-column {
 
 .top-bar nav a:first-child {
   margin-left: 0;
+}
+
+.top-bar nav a img {
+  width: 1rem;
+  height: 1rem;
 }
 
 .top-bar nav a:hover, .top-bar nav a[data-id='1'] {
@@ -3332,24 +3337,21 @@ body .base-row .base-column {
 }
 
 .welcome-wrapper {
-  width: 800px;
-  margin-left: calc(50% - 400px);
   text-align: center;
 }
 
 .welcome-wrapper p {
   color: #fff;
   font-family: "Kaushan Script", cursive;
-  font-size: 3rem;
+  font-size: 5.1rem;
 }
 
 .welcome-wrapper h1 {
   text-transform: uppercase;
-  font-size: 7rem;
+  font-size: 10rem;
   color: #fff;
-  max-width: 80%;
-  width: calc(calc(100% / 12) * 9);
-  margin-left: calc(calc(100% / 12) * 1.5);
+  width: calc(calc(100% / 12) * 10);
+  margin-left: calc(calc(100% / 12) * 1);
   font-weight: bold;
   margin-bottom: 8rem;
   position: relative;
@@ -3367,7 +3369,7 @@ body .base-row .base-column {
 }
 
 .welcome-wrapper a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -3403,10 +3405,11 @@ body .base-row .base-column {
 
 .pages-wrapper div p:first-child {
   font-weight: bold;
+  font-size: calc(1rem + 0.2rem);
 }
 
 .pages-wrapper div p + p {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .pages-wrapper div + div {
@@ -3539,8 +3542,12 @@ body .base-row .base-column {
   color: #fff;
   width: calc(calc(100% / 12) * 2.4);
   margin-left: calc(calc(100% / 12) * 0);
-  font-size: 1rem;
+  font-size: 0.8rem;
   vertical-align: top;
+}
+
+.facts-row .base-column .number-wrapper p {
+  text-transform: uppercase;
 }
 
 .facts-row .base-column .number-wrapper p:first-child {
