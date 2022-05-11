@@ -3065,6 +3065,9 @@ body, body * {
     width: 600px;
     margin-left: calc((100% - 600px) / 2);
   }
+  body .base-row div.base-column .services-wrapper::before {
+    bottom: 35%;
+  }
   body .hero-row h1 {
     font-size: 6rem;
     width: calc(calc(100% / 12) * 12);
@@ -3087,6 +3090,13 @@ body, body * {
   body .base-row div.base-column {
     width: 500px;
     margin-left: calc((100% - 500px) / 2);
+  }
+  body .base-row div.base-column .services-wrapper div {
+    width: calc(calc(100% / 12) * 6);
+    margin-left: calc(calc(100% / 12) * 0);
+  }
+  body .base-row div.base-column .services-wrapper::before {
+    display: none;
   }
   body .hero-row nav {
     display: none;
@@ -3117,6 +3127,13 @@ body, body * {
   body .base-row div.base-column {
     width: 400px;
     margin-left: calc(50% - 200px);
+  }
+  body .base-row div.base-column .services-wrapper div {
+    width: calc(calc(100% / 12) * 10);
+    margin-left: calc(calc(100% / 12) * 1);
+  }
+  body .base-row div.base-column .services-wrapper::before {
+    display: none;
   }
   body .hero-row .welcome-wrapper p {
     font-size: 2rem;
@@ -3512,6 +3529,7 @@ body .base-row .base-column {
 .facts-row {
   background-color: #95e1d3;
   font-size: 0;
+  padding: 3rem;
 }
 
 .facts-row .base-column .number-wrapper {
@@ -3528,5 +3546,55 @@ body .base-row .base-column {
 .facts-row .base-column .number-wrapper p:first-child {
   font-size: 4rem;
   font-weight: bold;
+}
+
+.services-row .base-column {
+  position: relative;
+}
+
+.services-row div:nth-child(2) {
+  font-size: 0;
+}
+
+.services-row div:nth-child(2) div {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+  width: calc(calc(100% / 12) * 4);
+  margin-left: calc(calc(100% / 12) * 0);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  padding-left: 5rem;
+  position: relative;
+  vertical-align: top;
+  font-size: 0.8rem;
+}
+
+.services-row div:nth-child(2) div img {
+  position: absolute;
+  left: 1rem;
+}
+
+.services-row div:nth-child(2) div p:nth-child(2) {
+  color: #333;
+  text-transform: uppercase;
+}
+
+.services-row div:nth-child(2) div p + p {
+  font-family: "Roboto", sans-serif;
+  color: #999;
+  margin-top: 1rem;
+}
+
+.services-row .services-wrapper::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0.05rem;
+  background-color: #333;
+  position: absolute;
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
+  bottom: 33%;
 }
 /*# sourceMappingURL=main.css.map */
