@@ -3285,11 +3285,11 @@ body .base-row .base-column {
   font-size: 2.14rem;
   font-weight: bold;
   color: #fff;
-  width: 30%;
+  width: 20%;
 }
 
 .top-bar nav {
-  width: 70%;
+  width: 80%;
   text-align: right;
 }
 
@@ -3601,6 +3601,37 @@ body .base-row .base-column {
   -webkit-filter: opacity(0.3);
           filter: opacity(0.3);
   bottom: 33%;
+}
+
+div.features-row {
+  background-image: url(../images/features/lake02.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: unset;
+}
+
+div.features-row .section-title + img {
+  position: absolute;
+  left: 60%;
+  z-index: 30;
+  bottom: 2rem;
+}
+
+div.features-row .features-wrapper {
+  overflow: hidden;
+}
+
+div.features-row .features-wrapper .features-wrapper {
+  height: 100%;
+  background-color: aqua;
+}
+
+div.features-row .features-wrapper .features-wrapper img {
+  position: absolute;
+  top: 26%;
 }
 
 html {
