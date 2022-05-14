@@ -3466,6 +3466,7 @@ body .base-row .base-column {
 }
 
 .stories-wrapper > div > div p {
+  text-transform: uppercase;
   display: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
