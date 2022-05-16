@@ -1,39 +1,41 @@
 div.features-row {
+    .base-column {
+        padding-bottom: 0;
 
-     background-image: url(../images/features/lake02.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 800px;
-         position: relative;
-         overflow: unset;
-        .section-title{
-            +img{
-            position: absolute;
+        // padding-right: 0;
+        .section-title {
+            +img {
+                position: absolute;
                 left: 60%;
+                top: 52%;
                 z-index: 30;
                 bottom: 2rem;
                 // top: 120%;
+            }
         }
-        }
-        
+    }
 
-        .features-wrapper{
-            
-        
+    background-image: url(../images/features/lake02.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    // height: 800px;
+    position: relative;
+    overflow: unset;
+
+    .features-wrapper {
         overflow: hidden;
-        .features-wrapper{
-            height: 100%;
-            background-color: aqua;
-            img{
-               
-                position: absolute;
-                // left: 30%;
-                top: 26%;
+        height: 575px;
+        width: 100%;
+        position: relative;
 
-         }
-
+        img {
+            @include wd40(6, 2);
+            position: absolute;
+            // left: 30%;
+            // width: 100%;
+            left: 5%;
         }
-        
     }
 }

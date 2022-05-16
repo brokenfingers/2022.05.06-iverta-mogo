@@ -14,7 +14,7 @@
         position: relative;
         cursor: pointer;
         // overflow: hidden;
-        cursor: pointer;
+        text-align: center;
         background-color: $base_color5;
 
         &>div {
@@ -34,7 +34,7 @@
                 font-size: 1.5rem;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -30%);
                 z-index: 20;
 
                 &::before {

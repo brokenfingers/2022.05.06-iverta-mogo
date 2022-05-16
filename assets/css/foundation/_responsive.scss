@@ -3,7 +3,7 @@
 
 
 @media (max-width: 1300px) {
-    body{
+    body {
         .base-row {
             div.base-column {
                 width: $width_max_2;
@@ -11,18 +11,19 @@
             }
         }
     }
-        
+
 }
 
 @media (max-width: 1000px) {
-    
+
     body {
         .base-row {
             div.base-column {
                 width: $width_max_3;
                 margin-left: $marging_max_3;
-            .services-wrapper {
-                    
+
+                .services-wrapper {
+
                     &::before {
                         bottom: 35%;
                     }
@@ -32,10 +33,11 @@
 
 
         .hero-row {
-            h1{
+            h1 {
                 font-size: 6rem;
                 @include wd40(12, 1);
             }
+
             nav {
                 >* {
                     margin-left: 1.5rem;
@@ -43,27 +45,29 @@
             }
 
         }
+
         .stories-wrapper {
             div {
                 width: 80%;
                 margin-left: 10%;
             }
         }
-       .section-title {
-           
-            h2{
-                +p{
-                    
-                    @include wd40(12, 0) 
+
+        .section-title {
+
+            h2 {
+                +p {
+
+                    @include wd40(12, 0)
                 }
             }
-                
-       
+
+
             // ;
-        } 
+        }
     }
-    
-   
+
+
 }
 
 @media (max-width: 800px) {
@@ -73,12 +77,28 @@
                 width: $width_max_4;
                 margin-left: $marging_max_4;
 
+                .section-title {
+                    +img[alt="iphone"] {
+                        height: 58%;
+                    }
+                }
+
                 .services-wrapper {
-                    div{
+                    div {
                         @include wd40(6, 0);
                     }
+
                     &::before {
                         display: none;
+                    }
+                }
+
+                .features-wrapper {
+
+                    height: 300px;
+
+                    img {
+                        @include wd40(10, 1)
                     }
                 }
 
@@ -86,31 +106,36 @@
         }
 
         .hero-row {
-            nav{
+            nav {
                 display: none;
             }
-            .buterbrodas{
+
+            .buterbrodas {
                 display: inline-block;
             }
-            h1{
+
+            h1 {
                 font-size: 5rem;
                 @include wd40(8, 2);
             }
-            .pages-wrapper{
-                div{
+
+            .pages-wrapper {
+                div {
                     @include wd40(4, 1);
                     margin-bottom: 4rem;
                 }
             }
-            
-                
-         
-            
+
+
+
+
         }
+
         .facts-row {
             .base-column {
                 .number-wrapper {
                     font-size: 0.8rem;
+
                     p {
                         &:first-child {
                             font-size: 2rem;
@@ -121,12 +146,11 @@
 
             }
         }
-                
-                
+
+
     }
-    .section-title{
-        // @include wd40(10, 1);
-    }
+
+
 
 }
 
@@ -137,28 +161,37 @@
                 width: 400px;
                 margin-left: calc(50% - 200px);
 
+                .section-title {
+                    +img[alt="iphone"] {
+                        height: 54%;
+                        left: 52%;
+                    }
+                }
 
                 .services-wrapper {
-                        div {
-                            @include wd40(10, 1);
-                        }
-                
-                        &::before {
-                            display: none;
-                        }
+                    div {
+                        @include wd40(10, 1);
                     }
-            }
-        }
-        .hero-row {
-            .welcome-wrapper{
-                p{
-                   font-size: 2rem; 
+
+                    &::before {
+                        display: none;
+                    }
                 }
             }
-            h1{
+        }
+
+        .hero-row {
+            .welcome-wrapper {
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            h1 {
                 font-size: 4rem;
                 @include wd40(6, 3);
             }
+
             .pages-wrapper {
                 div {
                     @include wd40(8, 2);
@@ -166,12 +199,14 @@
                 }
             }
         }
+
         .facts-row {
             .base-column {
                 .number-wrapper {
                     font-size: 1rem;
-                @include wd40(8, 2);
-                margin-bottom: 2rem;
+                    @include wd40(8, 2);
+                    margin-bottom: 2rem;
+
                     p {
                         &:first-child {
                             font-size: 4rem;
@@ -183,6 +218,7 @@
             }
         }
     }
+
     .section-title {
         @include wd40(10, 1);
     }
@@ -207,12 +243,13 @@
 
             h1 {
                 font-size: 2rem;
-                
+
                 @include wd40(4, 4);
             }
 
             .pages-wrapper {
                 margin-top: 7rem;
+
                 div {
                     @include wd40(10, 1);
                     margin-bottom: 4rem;
