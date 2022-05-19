@@ -1,0 +1,142 @@
+.service2-row {
+    height: 1000px;
+}
+
+.service2-wrapper {
+    @include wd40(6, 6);
+
+    position: relative;
+
+    .big-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        object-fit: cover;
+        object-position: top left;
+        top: 0;
+        transform: translateX(-100%);
+    }
+
+
+
+    .title-bar {
+        padding: 1rem;
+        border: 1px solid $dark_2;
+
+        border-left: none;
+        border-right: none;
+        cursor: pointer;
+
+        position: relative;
+
+        >* {
+            display: inline-block;
+        }
+
+        img {
+            width: 2rem;
+        }
+
+        p {
+            vertical-align: top;
+            line-height: 2rem;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            background-repeat: no-repeat;
+            top: 0;
+            right: 0;
+            background-position: center;
+            position: absolute;
+            background-image: url(../images/service2/ARROW.svg);
+
+        }
+    }
+
+
+    .service {
+        .textarea-holder {
+            padding: 1rem;
+            border: 1px solid $dark_2;
+
+            border-left: none;
+            border-right: none;
+            margin-bottom: $font_size_1;
+        }
+
+        &[data-id="0"] {
+            .title-bar {
+                margin-bottom: $font_size_1;
+
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+
+            img {
+                display: none;
+            }
+
+            .textarea-holder {
+                display: none
+            }
+
+        }
+    }
+
+
+
+
+
+    textarea {
+        // @include wd40(11.5, 0.25);
+
+        resize: none;
+        border: none;
+        width: 100%;
+        // padding: 0 0.7rem;
+        color: $dark_2;
+        font-family: $font_3;
+        font-style: italic;
+        // padding: 1rem;
+
+
+
+        margin-bottom: 0.6rem;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+
+            background-color: #F5F5F5;
+            cursor: pointer;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+            background-color: $base_color5;
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::after {
+            content: '';
+            background-color: $dark_2;
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            top: 3rem;
+            height: 0.2rem;
+
+        }
+    }
+}

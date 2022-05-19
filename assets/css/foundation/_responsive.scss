@@ -35,7 +35,7 @@
         .hero-row {
             h1 {
                 font-size: 6rem;
-                @include wd40(12, 1);
+                @include wd40(12, 0);
             }
 
             nav {
@@ -177,6 +177,21 @@
                         display: none;
                     }
                 }
+
+                .service2-wrapper {
+                    @include wd40(12, 0);
+                    margin-top: 360px;
+
+                    .service {
+
+                        .big-image {
+
+                            padding: 0;
+                            transform: translateY(-100%);
+                            top: -1rem;
+                        }
+                    }
+                }
             }
         }
 
@@ -244,7 +259,7 @@
             h1 {
                 font-size: 2rem;
 
-                @include wd40(4, 4);
+                @include wd40(10, 1);
             }
 
             .pages-wrapper {
