@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3785,6 +3785,92 @@ div.features-row .features-wrapper img {
   width: 100%;
   top: 3rem;
   height: 0.2rem;
+}
+
+.qoute-row {
+  background-color: #f8f8f8;
+  font-size: 0;
+}
+
+.qoute-row .qoute-wrapper {
+  width: calc(calc(100% / 12) * 10);
+  margin-left: calc(calc(100% / 12) * 1);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.qoute-row .qoute-wrapper > div {
+  display: inline-block;
+}
+
+.qoute-row .qoute-wrapper > div:first-of-type {
+  width: calc(calc(100% / 12) * 3);
+  margin-left: calc(calc(100% / 12) * 0);
+}
+
+.qoute-row .qoute-wrapper > div:first-of-type img {
+  padding: 3rem;
+  border: 0.2rem solid #95e1d3;
+}
+
+.qoute-row .qoute-wrapper > div:nth-of-type(2) {
+  font-size: 1.5rem;
+  color: #999;
+  vertical-align: bottom;
+  width: calc(calc(100% / 12) * 9);
+  margin-left: calc(calc(100% / 12) * 0);
+}
+
+.qoute-row .qoute-wrapper > div:nth-of-type(2) p:nth-of-type(1) {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.qoute-row .qoute-wrapper > div:nth-of-type(2) p:nth-of-type(2) {
+  color: #333;
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+}
+
+.qoute-row .qoute-wrapper > div:nth-of-type(2) p:nth-of-type(2)::before {
+  content: '';
+  display: inline-block;
+  width: 3rem;
+  height: 0.15rem;
+  background-color: #f38181;
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.qoute-row .qoute-wrapper::before {
+  content: '';
+  position: absolute;
+  left: -4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(270deg);
+          transform: translateY(-50%) rotate(270deg);
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-image: url(../images/service2/ARROW.svg);
+  cursor: pointer;
+}
+
+.qoute-row .qoute-wrapper::after {
+  content: '';
+  position: absolute;
+  right: -4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-image: url(../images/service2/ARROW.svg);
+  cursor: pointer;
 }
 
 html {

@@ -140,3 +140,97 @@
         }
     }
 }
+
+.qoute-row {
+    background-color: #f8f8f8;
+    font-size: 0;
+
+    .qoute-wrapper {
+        @include wd40(10, 1);
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        position: relative;
+
+        >div {
+            display: inline-block;
+
+
+            &:first-of-type {
+                img {
+                    padding: 3rem;
+                    border: 0.2rem solid $base_color5;
+
+                }
+
+
+                @include wd40(3, 0)
+            }
+
+            &:nth-of-type(2) {
+                font-size: $font_size_2;
+
+                color: $dark_2;
+
+
+                vertical-align: bottom;
+
+                @include wd40(9, 0);
+
+                p {
+                    &:nth-of-type(1) {
+                        font-family: $font_3;
+                        font-style: italic;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: $dark_1;
+                        font-family: $font_2;
+                        font-style: normal;
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 3rem;
+                            height: 0.15rem;
+                            background-color: $base_color4;
+                            margin-right: 0.5rem;
+                            margin-bottom: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -4rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(270deg);
+            background-position: center;
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            background-image: url(../images/service2/ARROW.svg);
+            cursor: pointer;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -4rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            background-position: center;
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            background-image: url(../images/service2/ARROW.svg);
+            cursor: pointer;
+        }
+
+
+
+
+    }
+}
