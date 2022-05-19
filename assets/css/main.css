@@ -3517,7 +3517,7 @@ body .base-row .base-column {
   bottom: 0.7rem;
 }
 
-.stories-wrapper > div > div p {
+.stories-wrapper > div > div > p {
   text-transform: uppercase;
   display: none;
   font-family: "Montserrat", sans-serif;
@@ -3532,7 +3532,7 @@ body .base-row .base-column {
   z-index: 20;
 }
 
-.stories-wrapper > div > div p::before {
+.stories-wrapper > div > div > p::before {
   content: '';
   display: block;
   width: 2.5rem;
@@ -3896,6 +3896,125 @@ div.features-row .features-wrapper img {
   background-repeat: no-repeat;
   background-image: url(../images/service2/ARROW.svg);
   cursor: pointer;
+}
+
+.team-row {
+  height: 1000px;
+}
+
+.teams-wrapper > .person {
+  display: inline-block;
+  width: calc(calc(100% / 12) * 3);
+  margin-left: calc(calc(100% / 12) * 0.5);
+  height: 30rem;
+  margin-bottom: 1.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  text-align: center;
+  background-color: #95e1d3;
+}
+
+.teams-wrapper > .person .socials {
+  display: none;
+  position: relative;
+  z-index: 50;
+  top: 50%;
+  font-size: 0;
+}
+
+.teams-wrapper > .person .socials .social-link {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fce38a;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.teams-wrapper > .person .socials .social-link svg {
+  display: inline-block;
+  fill: #f38181;
+  -o-object-position: bottom;
+     object-position: bottom;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.teams-wrapper > .person .socials .social-link:hover, .teams-wrapper > .person .socials .social-link[data-id="1"] {
+  background-color: #f38181;
+}
+
+.teams-wrapper > .person .socials .social-link:hover svg, .teams-wrapper > .person .socials .social-link[data-id="1"] svg {
+  fill: #fff;
+}
+
+.teams-wrapper > .person .socials .social-link + .social-link {
+  border-left: 1px solid #f38181;
+}
+
+.teams-wrapper > .person .photo-holder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+}
+
+.teams-wrapper > .person .photo-holder::after {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
+  background-image: linear-gradient(#f38181, #fce38a);
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+}
+
+.teams-wrapper > .person .description {
+  top: 95%;
+}
+
+.teams-wrapper > .person .description p {
+  font-size: 1rem;
+}
+
+.teams-wrapper > .person .description p:nth-of-type(1) {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.7rem;
+}
+
+.teams-wrapper > .person .description p:nth-of-type(2) {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #999;
+}
+
+.teams-wrapper > .person img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0.7rem;
+  left: 0.7rem;
+  position: absolute;
+}
+
+.teams-wrapper > .person:hover div img, .teams-wrapper > .person[data-id="1"] div img {
+  top: 0;
+  left: 0;
+}
+
+.teams-wrapper > .person:hover div::after, .teams-wrapper > .person[data-id="1"] div::after {
+  display: block;
+}
+
+.teams-wrapper > .person:hover div.socials, .teams-wrapper > .person[data-id="1"] div.socials {
+  display: inline;
 }
 
 html {

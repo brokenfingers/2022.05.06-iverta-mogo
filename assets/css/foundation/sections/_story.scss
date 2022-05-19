@@ -1,19 +1,16 @@
 .stories-wrapper> {
     div {
         display: inline-block;
-        // @include wd40(3.6, 0.1);
+
         width: 32%;
-        // @include wd40(3.6, 0.1)
-        // +div{
-        //     margin-left: 1.5%;
-        // }
+
         margin-bottom: 1.5rem;
         margin-right: 0.5rem;
         $img_offset: 0.7rem;
         height: 16.8rem;
         position: relative;
         cursor: pointer;
-        // overflow: hidden;
+
         text-align: center;
         background-color: $base_color5;
 
@@ -24,7 +21,7 @@
             right: $img_offset;
             bottom: $img_offset;
 
-            p {
+            >p {
                 text-transform: uppercase;
                 display: none;
                 font-family: $font_1;
