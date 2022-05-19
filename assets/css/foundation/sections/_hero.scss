@@ -7,7 +7,7 @@ body {
 
     .hero-row {
         width: 100%;
-        // min-height: fit-content;
+        min-height: 100vh;
         // overflow: hidden;
 
         background-image: url(../images/hero/MoGo_FREE_Template_by_Laaqiq_01.jpg), linear-gradient(#ea8283, #efd289);
@@ -164,6 +164,7 @@ body {
         //    max-width: 80%;
         @include wd40(10, 1);
         font-weight: bold;
+        text-align: center;
         margin-bottom: 8rem;
         position: relative;
 
@@ -189,6 +190,7 @@ body {
         color: $base_color1;
         padding: 0.6rem 1.4rem;
         border: 0.2rem solid $base_color1;
+        white-space: nowrap;
 
         &:hover {
             background-color: $base_color3;
