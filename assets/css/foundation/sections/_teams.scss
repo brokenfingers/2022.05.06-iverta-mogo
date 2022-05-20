@@ -1,15 +1,14 @@
-.team-row {
-    height: 1000px;
-}
-
 .teams-wrapper> {
+    font-size: 0;
+
     .person {
         display: inline-block;
-        @include wd40(3, 0.5);
-        height: 30rem;
+        @include wd40(3.8, 0.2);
+
+        height: 34rem;
 
         margin-bottom: 1.5rem;
-        margin-right: 0.5rem;
+
 
         $img_offset: 0.7rem;
         position: relative;
@@ -17,18 +16,27 @@
         text-align: center;
         background-color: $base_color5;
 
+        &:nth-of-type(1) {
+            //first .person
+            margin-left: 0;
+        }
+
         .socials {
             display: none;
-            position: relative;
+            position: absolute;
+            width: fit-content;
             z-index: 50;
             top: 50%;
+            left: calc(50% - #{$img_offset});
+
+            transform: translateX(-50%);
             font-size: 0;
 
             .social-link {
                 display: inline-block;
-
-                width: 3rem;
-                height: 3rem;
+                $social_height: 3rem;
+                width: $social_height;
+                height: $social_height;
                 background-color: $base_color2;
                 padding: 0;
                 margin: 0;
@@ -83,8 +91,10 @@
         }
 
         .description {
-            // position: relative;
-            top: 95%;
+            position: absolute;
+            bottom: -5rem;
+            left: 50%;
+            transform: translateX(-50%);
 
             p {
                 font-size: 1rem;
@@ -106,6 +116,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: left top;
             top: $img_offset;
             left: $img_offset;
             position: absolute;
@@ -115,11 +126,9 @@
         &:hover,
         &[data-id="1"] {
             div {
-
                 img {
                     top: 0;
                     left: 0;
-
                 }
 
                 &::after {
@@ -127,7 +136,8 @@
                 }
 
                 &.socials {
-                    display: inline;
+                    display: inline-block;
+                    // display: none;
                 }
             }
         }

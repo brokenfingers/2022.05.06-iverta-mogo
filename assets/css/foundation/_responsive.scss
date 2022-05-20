@@ -42,6 +42,21 @@
 
                     }
                 }
+
+                .teams-wrapper {
+                    .social-link {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+
+                    .person {
+                        height: 20rem;
+                    }
+
+                    img {
+                        object-position: top right;
+                    }
+                }
             }
         }
 
@@ -116,6 +131,21 @@
                     }
                 }
 
+                .teams-wrapper {
+                    .social-link {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+
+                    .person {
+                        @include wd40(10, 1);
+                        margin-bottom: 7rem;
+                    }
+
+                    img {
+                        object-position: top center;
+                    }
+                }
 
 
             }
@@ -321,6 +351,22 @@
                     margin-bottom: 4rem;
                     margin-left: 0;
                 }
+            }
+        }
+
+        .teams-wrapper {
+            .social-link {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+
+            .person {
+                @include wd40(10, 1);
+                margin-bottom: 7rem;
+            }
+
+            img {
+                object-position: right;
             }
         }
 
