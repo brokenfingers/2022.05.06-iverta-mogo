@@ -7,8 +7,7 @@ body {
 
     .hero-row {
         width: 100%;
-        min-height: 100vh;
-        // overflow: hidden;
+
 
         background-image: url(../images/hero/MoGo_FREE_Template_by_Laaqiq_01.jpg), linear-gradient(#ea8283, #efd289);
         background-size: auto;
@@ -19,17 +18,13 @@ body {
             padding: $padding 0;
             width: $width_max_1;
             margin-left: $marging_max_1;
-            // height:max-content;
             position: relative;
         }
     }
 
     .base-row {
-        // width: 100%;
-        // min-height: 100vh;
         overflow: hidden;
 
-        // background-color: rgba(150, 255, 255, 0.477);
         .base-column {
             padding: $padding 0;
             width: $width_max_1;
