@@ -3087,6 +3087,13 @@ body, body * {
     -o-object-position: top right;
        object-position: top right;
   }
+  body .base-row div.base-column .logos-wrapper .logo {
+    width: calc(calc(100% / 12) * 3.3);
+    margin-left: calc(calc(100% / 12) * 1);
+  }
+  body .base-row div.base-column .logos-wrapper .logo:nth-of-type(3n+1) {
+    margin-left: 0;
+  }
   body .hero-row h1 {
     font-size: 7rem;
     width: calc(calc(100% / 12) * 12);
@@ -3126,6 +3133,9 @@ body, body * {
   body .base-row div.base-column .features-wrapper img {
     width: calc(calc(100% / 12) * 10);
     margin-left: calc(calc(100% / 12) * 1);
+  }
+  body .base-row div.base-column .teams-wrapper {
+    margin-bottom: 0;
   }
   body .base-row div.base-column .teams-wrapper .social-link {
     width: 2.5rem;
@@ -3206,6 +3216,17 @@ body, body * {
     margin-top: 3rem;
     width: calc(calc(100% / 12) * 12);
     margin-left: calc(calc(100% / 12) * 0);
+  }
+  body .base-row div.base-column .logos-wrapper .logo {
+    width: calc(calc(100% / 12) * 5);
+    margin-left: calc(calc(100% / 12) * 1);
+  }
+  body .base-row div.base-column .logos-wrapper .logo:nth-of-type(4n) {
+    width: calc(calc(100% / 12) * 5);
+    margin-left: calc(calc(100% / 12) * 1);
+  }
+  body .base-row div.base-column .logos-wrapper .logo:nth-of-type(odd) {
+    margin-left: 0;
   }
   body .hero-row .welcome-wrapper p {
     font-size: 4rem;
@@ -3935,11 +3956,12 @@ div.features-row .features-wrapper img {
   cursor: pointer;
 }
 
-.teams-wrapper > {
+.teams-wrapper {
   font-size: 0;
+  margin-bottom: 7rem;
 }
 
-.teams-wrapper > .person {
+.teams-wrapper .person {
   display: inline-block;
   width: calc(calc(100% / 12) * 3.8);
   margin-left: calc(calc(100% / 12) * 0.2);
@@ -3950,11 +3972,11 @@ div.features-row .features-wrapper img {
   background-color: #95e1d3;
 }
 
-.teams-wrapper > .person:nth-of-type(1) {
+.teams-wrapper .person:nth-of-type(1) {
   margin-left: 0;
 }
 
-.teams-wrapper > .person .socials {
+.teams-wrapper .person .socials {
   display: none;
   position: absolute;
   width: -webkit-fit-content;
@@ -3968,7 +3990,7 @@ div.features-row .features-wrapper img {
   font-size: 0;
 }
 
-.teams-wrapper > .person .socials .social-link {
+.teams-wrapper .person .socials .social-link {
   display: inline-block;
   width: 3rem;
   height: 3rem;
@@ -3979,7 +4001,7 @@ div.features-row .features-wrapper img {
           transform: translateY(-50%);
 }
 
-.teams-wrapper > .person .socials .social-link svg {
+.teams-wrapper .person .socials .social-link svg {
   display: inline-block;
   fill: #f38181;
   -o-object-position: bottom;
@@ -3989,19 +4011,19 @@ div.features-row .features-wrapper img {
   padding: 10px;
 }
 
-.teams-wrapper > .person .socials .social-link:hover, .teams-wrapper > .person .socials .social-link[data-id="1"] {
+.teams-wrapper .person .socials .social-link:hover, .teams-wrapper .person .socials .social-link[data-id="1"] {
   background-color: #f38181;
 }
 
-.teams-wrapper > .person .socials .social-link:hover svg, .teams-wrapper > .person .socials .social-link[data-id="1"] svg {
+.teams-wrapper .person .socials .social-link:hover svg, .teams-wrapper .person .socials .social-link[data-id="1"] svg {
   fill: #fff;
 }
 
-.teams-wrapper > .person .socials .social-link + .social-link {
+.teams-wrapper .person .socials .social-link + .social-link {
   border-left: 1px solid #f38181;
 }
 
-.teams-wrapper > .person .photo-holder {
+.teams-wrapper .person .photo-holder {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -4009,7 +4031,7 @@ div.features-row .features-wrapper img {
   bottom: 0.7rem;
 }
 
-.teams-wrapper > .person .photo-holder::after {
+.teams-wrapper .person .photo-holder::after {
   content: '';
   display: none;
   position: absolute;
@@ -4021,7 +4043,7 @@ div.features-row .features-wrapper img {
           filter: opacity(0.9);
 }
 
-.teams-wrapper > .person .description {
+.teams-wrapper .person .description {
   position: absolute;
   bottom: -5rem;
   left: 50%;
@@ -4029,22 +4051,22 @@ div.features-row .features-wrapper img {
           transform: translateX(-50%);
 }
 
-.teams-wrapper > .person .description p {
+.teams-wrapper .person .description p {
   font-size: 1rem;
 }
 
-.teams-wrapper > .person .description p:nth-of-type(1) {
+.teams-wrapper .person .description p:nth-of-type(1) {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0.7rem;
 }
 
-.teams-wrapper > .person .description p:nth-of-type(2) {
+.teams-wrapper .person .description p:nth-of-type(2) {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   color: #999;
 }
 
-.teams-wrapper > .person img {
+.teams-wrapper .person img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -4056,17 +4078,57 @@ div.features-row .features-wrapper img {
   position: absolute;
 }
 
-.teams-wrapper > .person:hover div img, .teams-wrapper > .person[data-id="1"] div img {
+.teams-wrapper .person:hover div img, .teams-wrapper .person[data-id="1"] div img {
   top: 0;
   left: 0;
 }
 
-.teams-wrapper > .person:hover div::after, .teams-wrapper > .person[data-id="1"] div::after {
+.teams-wrapper .person:hover div::after, .teams-wrapper .person[data-id="1"] div::after {
   display: block;
 }
 
-.teams-wrapper > .person:hover div.socials, .teams-wrapper > .person[data-id="1"] div.socials {
+.teams-wrapper .person:hover div.socials, .teams-wrapper .person[data-id="1"] div.socials {
   display: inline-block;
+}
+
+.logos-row {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.logos-row .logos-wrapper {
+  font-size: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.logos-row .logos-wrapper .logo {
+  width: calc(calc(100% / 12) * 1.15);
+  margin-left: calc(calc(100% / 12) * 1);
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.logos-row .logos-wrapper .logo:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.logos-row .logos-wrapper .logo img {
+  width: 80%;
+  height: 80%;
+}
+
+.logos-row .logos-wrapper .logo:hover {
+  border-radius: 10px;
+  background-color: #f38181;
+}
+
+.logos-row .logos-wrapper .logo:hover img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 html {
