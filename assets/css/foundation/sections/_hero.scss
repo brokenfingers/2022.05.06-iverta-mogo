@@ -131,11 +131,14 @@ body {
         display: none;
         text-align: right;
         vertical-align: top;
+        height: fit-content;
+        width: 80%;
 
-        width: 70%;
+        svg {
+            fill: $base_color1;
+            width: 2.5rem;
 
-        &:hover {
-            color: $base_color3;
+            height: 100%;
         }
     }
 
