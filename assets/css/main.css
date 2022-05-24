@@ -1498,8 +1498,8 @@ s .person-holder:nth-of-type(3) img {
 .blog-unit .image-holder img {
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog-unit .date {
@@ -1614,6 +1614,35 @@ s .person-holder:nth-of-type(3) img {
 
 .map-row svg {
   fill: #f38181;
+}
+
+@media (max-width: 1024px) {
+  .blog-unit .image-holder {
+    height: 11rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .blog-unit {
+    width: calc(calc(100% / 12) * 10);
+    margin-left: calc(calc(100% / 12) * 1);
+  }
+  .blog-unit + .blog-unit {
+    margin-top: 4rem;
+  }
+  .blog-unit .image-holder {
+    height: 17.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .blog-unit {
+    width: calc(calc(100% / 12) * 12);
+    margin-left: calc(calc(100% / 12) * 0);
+  }
+  .blog-unit .image-holder {
+    height: 12rem;
+  }
 }
 
 html {
