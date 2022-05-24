@@ -20,33 +20,63 @@
         height: $face-width;
         overflow: hidden;
         border-radius: 50%;
-
+        vertical-align: top;
+        position: relative;
 
         img {
             object-fit: cover;
-            object-position: center
+            object-position: center;
+            position: absolute;
+        }
+    }
+
+    &:nth-of-type(1) {
+        img {
+            left: -1rem;
+        }
+    }
+
+    &:nth-of-type(2) {
+        img {
+            top: -1rem;
+        }
+    }
+
+    s &:nth-of-type(3) {
+        img {
+            left: -1rem;
+        }
+    }
+
+    &:nth-of-type(4) {
+        img {
+            left: -0.5rem;
+            top: -0.5rem;
         }
     }
 
     .info {
         display: inline-block;
         width: calc(100% - #{$face-width});
-        padding-left: 2rem;
+        padding-left: 2.2rem;
+        padding-right: 2rem;
 
         p {
-            margin-bottom: 0.7rem;
+            margin-bottom: 1rem;
         }
 
         .name {
             font-size: 1rem;
             font-family: $font_1;
             font-weight: 500;
+            margin-top: 1rem;
         }
 
         .position {
             font-size: 1.07rem;
             font-family: $font_3;
             font-style: italic;
+            margin-bottom: 1.7rem;
 
             &::after {
                 content: '';
@@ -54,7 +84,7 @@
                 height: 0.2rem;
                 width: 4rem;
                 background-color: $base_color4;
-                margin-top: 0.7rem;
+                margin-top: 1.5rem;
 
             }
         }
