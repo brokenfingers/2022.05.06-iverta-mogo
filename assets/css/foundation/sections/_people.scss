@@ -1,19 +1,68 @@
 .people-row {
     position: relative;
 
+    .people-wrapper {
+        display: inline-block;
+        font-size: 0;
+    }
 }
 
 
 .person-holder {
+    @include wd40(6, 0);
+    display: inline-block;
+    $face-width: 7.8rem;
+
     .face {
-        width: 7.8rem;
-        height: 7.8rem;
+
+        display: inline-block;
+        width: $face-width;
+        height: $face-width;
         overflow: hidden;
         border-radius: 50%;
+
 
         img {
             object-fit: cover;
             object-position: center
+        }
+    }
+
+    .info {
+        display: inline-block;
+        width: calc(100% - #{$face-width});
+        padding-left: 2rem;
+
+        p {
+            margin-bottom: 0.7rem;
+        }
+
+        .name {
+            font-size: 1rem;
+            font-family: $font_1;
+            font-weight: 500;
+        }
+
+        .position {
+            font-size: 1.07rem;
+            font-family: $font_3;
+            font-style: italic;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 0.2rem;
+                width: 4rem;
+                background-color: $base_color4;
+                margin-top: 0.7rem;
+
+            }
+        }
+
+        .description {
+            font-size: 1.07rem;
+            font-family: $font_3;
+            color: $dark_2;
         }
     }
 }

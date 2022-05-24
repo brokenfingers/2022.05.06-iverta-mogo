@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;1,300&display=swap");
 body, body * {
   margin: 0;
   padding: 0;
@@ -1329,7 +1329,19 @@ div.features-row .features-wrapper img {
   position: relative;
 }
 
+.people-row .people-wrapper {
+  display: inline-block;
+  font-size: 0;
+}
+
+.person-holder {
+  width: calc(calc(100% / 12) * 6);
+  margin-left: calc(calc(100% / 12) * 0);
+  display: inline-block;
+}
+
 .person-holder .face {
+  display: inline-block;
   width: 7.8rem;
   height: 7.8rem;
   overflow: hidden;
@@ -1341,6 +1353,43 @@ div.features-row .features-wrapper img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.person-holder .info {
+  display: inline-block;
+  width: calc(100% - 7.8rem);
+  padding-left: 2rem;
+}
+
+.person-holder .info p {
+  margin-bottom: 0.7rem;
+}
+
+.person-holder .info .name {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.person-holder .info .position {
+  font-size: 1.07rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.person-holder .info .position::after {
+  content: '';
+  display: block;
+  height: 0.2rem;
+  width: 4rem;
+  background-color: #f38181;
+  margin-top: 0.7rem;
+}
+
+.person-holder .info .description {
+  font-size: 1.07rem;
+  font-family: "Roboto", sans-serif;
+  color: #999;
 }
 
 .people-background {
