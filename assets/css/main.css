@@ -1185,20 +1185,22 @@ div.features-row .features-wrapper img {
   background-color: #fff;
 }
 
-.work-qoute .image-wrapper .person {
+.work-qoute .qoute-wrapper div.image-wrapper {
+  width: 15.2rem;
+  height: 15.2rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.work-qoute .qoute-wrapper div.image-wrapper .person {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.work-qoute .image-wrapper .image-mask {
-  display: none;
-  background-color: red;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 50%;
+.work-qoute .qoute-wrapper div:nth-of-type(2) {
+  width: calc(100% - 15.2rem);
 }
 
 html {
