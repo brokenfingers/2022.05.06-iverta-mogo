@@ -1398,6 +1398,7 @@ s .person-holder:nth-of-type(3) img {
   font-weight: 500;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .person-holder .info .position {
