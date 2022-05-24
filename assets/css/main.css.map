@@ -15,7 +15,8 @@
         "foundation/sections/_features.scss",
         "foundation/sections/_service2.scss",
         "foundation/sections/_teams.scss",
-        "foundation/sections/_work.scss"
+        "foundation/sections/_work.scss",
+        "foundation/sections/_people.scss"
     ],
     "names": [],
     "file": "main.css"
