@@ -1327,6 +1327,7 @@ div.features-row .features-wrapper img {
 
 .people-row {
   position: relative;
+  padding-bottom: 9.14rem;
 }
 
 .people-row .people-wrapper {
@@ -1348,6 +1349,8 @@ div.features-row .features-wrapper img {
   border-radius: 50%;
   vertical-align: top;
   position: relative;
+  margin-left: 3rem;
+  margin-right: 2rem;
 }
 
 .person-holder .face img {
@@ -1358,8 +1361,16 @@ div.features-row .features-wrapper img {
   position: absolute;
 }
 
+.person-holder:nth-of-type(1) {
+  margin-bottom: 5rem;
+}
+
 .person-holder:nth-of-type(1) img {
   left: -1rem;
+}
+
+.person-holder:nth-of-type(2) {
+  margin-bottom: 5rem;
 }
 
 .person-holder:nth-of-type(2) img {
@@ -1377,20 +1388,16 @@ s .person-holder:nth-of-type(3) img {
 
 .person-holder .info {
   display: inline-block;
-  width: calc(100% - 7.8rem);
-  padding-left: 2.2rem;
-  padding-right: 2rem;
-}
-
-.person-holder .info p {
-  margin-bottom: 1rem;
+  width: calc(100% - 12.8rem);
+  padding-right: 3.9rem;
 }
 
 .person-holder .info .name {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .person-holder .info .position {
@@ -1417,7 +1424,7 @@ s .person-holder:nth-of-type(3) img {
 
 .people-background {
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background-image: url(../images/people/Layer53.jpg);
   background-size: cover;
   position: absolute;
@@ -1425,6 +1432,45 @@ s .person-holder:nth-of-type(3) img {
           filter: opacity(0.2);
   top: 0;
   z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .person-holder .face {
+    margin: 0;
+  }
+  .person-holder .info {
+    width: 100%;
+    padding-right: 0;
+  }
+  .person-holder:nth-of-type(even) .info {
+    padding-left: 1rem;
+  }
+  .person-holder:nth-of-type(odd) .info {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .person-holder {
+    width: calc(calc(100% / 12) * 10);
+    margin-left: calc(calc(100% / 12) * 1);
+  }
+  .person-holder:nth-of-type(1), .person-holder:nth-of-type(2), .person-holder:nth-of-type(3), .person-holder:nth-of-type(4) {
+    margin-bottom: 4rem;
+  }
+  .person-holder .face {
+    margin: 0;
+  }
+  .person-holder .info {
+    width: 100%;
+    padding-right: 0;
+  }
+  .person-holder:nth-of-type(even) .info {
+    padding-left: 1rem;
+  }
+  .person-holder:nth-of-type(odd) .info {
+    padding-right: 1rem;
+  }
 }
 
 html {
