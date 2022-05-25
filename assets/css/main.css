@@ -1660,6 +1660,7 @@ s .person-holder:nth-of-type(3) img {
 .footer-description {
   width: calc(100% / 2.5);
   margin-right: 2rem;
+  vertical-align: top;
 }
 
 .footer-description h2 {
@@ -1724,6 +1725,7 @@ s .person-holder:nth-of-type(3) img {
   color: #999;
   padding: 1rem;
   border: 1px solid #999;
+  border-right: none;
 }
 
 .footer-description .subscribe input:focus, .footer-description .subscribe button:focus {
@@ -1739,19 +1741,119 @@ s .person-holder:nth-of-type(3) img {
   font-size: 1rem;
   font-weight: bold;
   font-style: normal;
+  cursor: pointer;
+}
+
+.footer-description .subscribe button:hover {
+  background-color: #f38181;
+  border-color: #f38181;
 }
 
 .blog-mini-wrapper {
   width: calc(100% / 3);
   margin-right: 1.4rem;
+  font-size: 0;
+}
+
+.blog-mini-wrapper h2 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2.85rem;
+}
+
+.blog-mini-wrapper .blog-part {
+  margin-bottom: 2.07rem;
+  cursor: pointer;
+}
+
+.blog-mini-wrapper .blog-part:last-of-type {
+  margin-bottom: 0;
+}
+
+.blog-mini-wrapper .blog-part:hover .image-wrapper {
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+}
+
+.blog-mini-wrapper .blog-part .image-wrapper {
+  display: inline-block;
+  width: 8.57rem;
+  height: 5.7rem;
+  overflow: hidden;
+}
+
+.blog-mini-wrapper .blog-part .info {
+  display: inline-block;
+  width: calc(100% - 8.57rem);
+  padding: 1.5rem 4rem 0.64rem 1.57rem;
+  vertical-align: top;
+}
+
+.blog-mini-wrapper .blog-part .info p:first-of-type {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.blog-mini-wrapper .blog-part .info p:last-of-type {
+  font-size: 0.92rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #999;
 }
 
 .instagram {
   width: calc(100% / 4.44);
+  vertical-align: top;
+}
+
+.instagram h2 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2.85rem;
+}
+
+.instagram .galery {
+  margin-bottom: 1.5rem;
 }
 
 .instagram .galery > * {
   display: inline-block;
+}
+
+.instagram .galery .galery-item {
+  cursor: pointer;
+  width: 6.28rem;
+  height: 6.28rem;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.instagram .galery .galery-item:hover {
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+}
+
+.instagram p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 0.93rem;
+  color: #999;
+  cursor: pointer;
+}
+
+.instagram p:hover {
+  color: #333;
+}
+
+.instagram p:hover::after {
+  content: '>>';
+  display: inline-block;
+  margin-left: 1rem;
+  height: 100%;
 }
 
 footer > p {
@@ -1764,7 +1866,12 @@ footer > p {
 }
 
 footer > p span {
+  cursor: pointer;
   color: #f38181;
+}
+
+footer > p span:hover {
+  color: #95e1d3;
 }
 
 html {
