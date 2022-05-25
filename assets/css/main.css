@@ -1112,8 +1112,7 @@ div.features-row .features-wrapper img {
 }
 
 .work-wrapper {
-  width: 1920px;
-  margin-left: calc((100% - 1920px) / 2);
+  width: 100%;
   overflow: hidden;
   font-size: 0;
 }

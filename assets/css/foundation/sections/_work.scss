@@ -1,7 +1,9 @@
 .work-wrapper {
-    $width_xxl: 1920px;
-    width: $width_xxl;
-    margin-left: calc((100% - #{$width_xxl}) / 2);
+    // $width_xxl: 1920px;
+
+    // width: $width_xxl;
+    width: 100%;
+    // margin-left: calc((100% - #{$width_xxl}) / 2);
     overflow: hidden;
     font-size: 0;
 
