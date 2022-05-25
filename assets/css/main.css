@@ -31,6 +31,10 @@ body, body * {
     width: calc(calc(100% / 12) * 7);
     margin-left: calc(calc(100% / 12) * 0);
   }
+  body .base-row div.base-column .features-wrapper img {
+    width: calc(calc(100% / 12) * 8);
+    margin-left: calc(calc(100% / 12) * 2);
+  }
   body .base-row div.base-column .teams-wrapper .social-link {
     width: 2.5rem;
     height: 2.5rem;
@@ -217,6 +221,12 @@ body, body * {
   body .base-row div.base-column {
     width: calc(calc(100% / 12) * 10);
     margin-left: calc(calc(100% / 12) * 1);
+  }
+  body .base-row div.base-column .section-title + img[alt="iphone"] {
+    height: 54%;
+    right: 1rem;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   body .hero-row .welcome-wrapper p {
     font-size: 3rem;

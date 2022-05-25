@@ -43,7 +43,11 @@
                     }
                 }
 
-
+                .features-wrapper {
+                    img{
+                        @include wd40(8, 2);
+                    }
+                }
 
                 .teams-wrapper {
                     .social-link {
@@ -357,7 +361,13 @@
         .base-row {
             div.base-column {
                 @include wd40(10, 1);
-
+                .section-title {
+                    +img[alt="iphone"] {
+                        height: 54%;
+                        right: 1rem;
+                        transform: translateX(-100%);
+                    }
+                }
 
             }
         }
