@@ -4,9 +4,8 @@
     }
 
     div {
-        &:nth-child(2) {
+        &:nth-of-type(2) {
             font-size: 0;
-
             div {
                 font-family: $font_1;
                 font-size: 1rem;
@@ -21,26 +20,27 @@
 
                 img {
                     position: absolute;
-                    // top:0.2re
                     left: 1rem;
                 }
 
                 p {
-                    &:nth-child(2) {
+                    &:first-of-type {
                         color: $dark_1;
+                        font-size: 1rem;
+                        font-weight: 500;
                         text-transform: uppercase;
+                        margin-bottom: 1.4rem;
                     }
 
-                    +p {
+                    &:last-of-type {
                         font-family: $font_3;
                         color: $dark_2;
-                        margin-top: 1rem;
+                        font-size: 1.07rem;
+                        margin-top: 1.4rem;
                     }
                 }
 
             }
-
-            // background-color: black;
 
         }
     }

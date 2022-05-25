@@ -642,11 +642,11 @@ body .base-row .base-column {
   position: relative;
 }
 
-.services-row div:nth-child(2) {
+.services-row div:nth-of-type(2) {
   font-size: 0;
 }
 
-.services-row div:nth-child(2) div {
+.services-row div:nth-of-type(2) div {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   display: inline-block;
@@ -660,20 +660,24 @@ body .base-row .base-column {
   font-size: 0.8rem;
 }
 
-.services-row div:nth-child(2) div img {
+.services-row div:nth-of-type(2) div img {
   position: absolute;
   left: 1rem;
 }
 
-.services-row div:nth-child(2) div p:nth-child(2) {
+.services-row div:nth-of-type(2) div p:first-of-type {
   color: #333;
+  font-size: 1rem;
+  font-weight: 500;
   text-transform: uppercase;
+  margin-bottom: 1.4rem;
 }
 
-.services-row div:nth-child(2) div p + p {
+.services-row div:nth-of-type(2) div p:last-of-type {
   font-family: "Roboto", sans-serif;
   color: #999;
-  margin-top: 1rem;
+  font-size: 1.07rem;
+  margin-top: 1.4rem;
 }
 
 .services-row .services-wrapper::before {
