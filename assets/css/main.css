@@ -1231,15 +1231,14 @@ div.features-row .features-wrapper img {
 }
 
 @media (max-width: 1024px) {
-  .work-wrapper {
-    width: 1440px;
-    margin-left: calc((100% - 1440px) / 2);
+  .work-wrapper .img-parts {
+    width: 50%;
   }
   .work-wrapper .img-parts .image-holder {
-    height: 22rem;
+    height: 27rem;
   }
   .work-wrapper .img-parts:nth-of-type(3) .image-holder {
-    height: calc(22rem * 2);
+    height: calc(27rem * 2);
   }
   body .work-row div.work-qoute .base-column .qoute-wrapper .image-wrapper {
     width: 15.2rem;
@@ -1251,10 +1250,6 @@ div.features-row .features-wrapper img {
 }
 
 @media (max-width: 768px) {
-  .work-wrapper {
-    width: 1024px;
-    margin-left: calc((100% - 1024px) / 2);
-  }
   .work-wrapper .img-parts .image-holder {
     height: 16rem;
   }
@@ -1283,9 +1278,8 @@ div.features-row .features-wrapper img {
 }
 
 @media (max-width: 600px) {
-  .work-wrapper {
-    width: 1024px;
-    margin-left: calc((100% - 1024px) / 2);
+  .work-wrapper .img-parts {
+    width: 100%;
   }
   .work-wrapper .img-parts .image-holder {
     height: 13rem;
@@ -1315,8 +1309,8 @@ div.features-row .features-wrapper img {
 
 @media (max-width: 400px) {
   .work-wrapper {
-    width: 500px;
-    margin-left: calc((100% - 500px) / 2);
+    width: 100%;
+    margin-left: 0;
   }
   .work-wrapper .img-parts .image-holder {
     height: 10rem;

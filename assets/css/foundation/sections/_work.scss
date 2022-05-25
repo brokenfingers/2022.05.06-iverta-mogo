@@ -1,5 +1,5 @@
 .work-wrapper {
-    // $width_xxl: 1920px;
+    
 
     // width: $width_xxl;
     width: 100%;
@@ -146,12 +146,11 @@
 
 @media (max-width: 1024px) {
     .work-wrapper {
-        $width_xxl: 1440px;
-        width: $width_xxl;
-        margin-left: calc((100% - #{$width_xxl}) / 2);
-        $img_parts_height: 22rem;
+  
+        $img_parts_height: 27rem;
 
         .img-parts {
+            width: 50%;
             .image-holder {
                 height: $img_parts_height;
             }
@@ -197,9 +196,7 @@
 
 @media (max-width: 768px) {
     .work-wrapper {
-        $width_xxl: 1024px;
-        width: $width_xxl;
-        margin-left: calc((100% - #{$width_xxl}) / 2);
+        
         $img_parts_height: 16rem;
 
         .img-parts {
@@ -262,12 +259,11 @@
 
 @media (max-width: 600px) {
     .work-wrapper {
-        $width_xxl: 1024px;
-        width: $width_xxl;
-        margin-left: calc((100% - #{$width_xxl}) / 2);
+        
         $img_parts_height: 13rem;
 
         .img-parts {
+            width: 100%;
             .image-holder {
                 height: $img_parts_height;
 
@@ -333,9 +329,11 @@
 
 @media (max-width: 400px) {
     .work-wrapper {
-        $width_xxl: 500px;
-        width: $width_xxl;
-        margin-left: calc((100% - #{$width_xxl}) / 2);
+       
+        width: 100%;
+        margin-left: 0;
+        
+
         $img_parts_height: 10rem;
 
         .img-parts {
