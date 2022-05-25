@@ -219,10 +219,11 @@ body, body * {
     margin-left: calc(calc(100% / 12) * 1);
   }
   body .hero-row .welcome-wrapper p {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
   body .hero-row .welcome-wrapper h1 {
-    font-size: 4rem;
+    font-size: 3.3rem;
     width: calc(calc(100% / 12) * 12);
     margin-left: calc(calc(100% / 12) * 0);
   }
@@ -392,12 +393,17 @@ body .base-row .base-column {
   height: -moz-fit-content;
   height: fit-content;
   width: 80%;
+  cursor: pointer;
 }
 
 .top-bar .buterbrodas svg {
   fill: #fff;
   width: 2.5rem;
   height: 100%;
+}
+
+.top-bar .buterbrodas svg:hover {
+  fill: #fce38a;
 }
 
 .welcome-wrapper {

@@ -365,11 +365,12 @@
         .hero-row {
             .welcome-wrapper {
                 p {
-                    font-size: 4rem;
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
                 }
 
                 h1 {
-                    font-size: 4rem;
+                    font-size: 3.3rem;
                     @include wd40(12, 0);
                 }
 
