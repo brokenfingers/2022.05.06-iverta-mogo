@@ -1874,6 +1874,51 @@ footer > p span:hover {
   color: #95e1d3;
 }
 
+@media (max-width: 1300px) {
+  .footer-wrapper > * {
+    width: calc(50% - 1rem);
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .footer-wrapper > div:first-of-type {
+    margin-right: 2rem;
+  }
+  .footer-wrapper .instagram {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-wrapper > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-description .follow {
+    margin-bottom: 1rem;
+  }
+  .footer-description .follow p {
+    margin-bottom: 1rem;
+    vertical-align: top;
+  }
+  .footer-description .follow .socials {
+    width: 50%;
+  }
+  .footer-description .subscribe input {
+    border-right: 1px solid #999;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .footer-description .subscribe button {
+    width: 100%;
+  }
+  .blog-mini-wrapper .blog-part .info {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
 html {
   font-size: 14px;
 }

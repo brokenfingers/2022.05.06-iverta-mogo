@@ -224,3 +224,70 @@ footer{
         }
     }
 }
+
+
+@media (max-width: 1300px) {
+    .footer-wrapper{
+        >*{
+            width: calc(50% - 1rem);
+            margin-right: 0;
+            margin-bottom: 4rem;
+        }
+        >div{
+            &:first-of-type{
+                margin-right: 2rem;
+            }
+        }
+        .instagram{
+            width:100%;
+        }
+        
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .footer-wrapper{
+        >*{
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .footer-description{
+        .follow{
+            margin-bottom: 1rem;
+            p{
+                margin-bottom: 1rem;
+                vertical-align: top;
+            }
+            .socials{
+                width: 50%;
+            }
+        }
+        .subscribe{
+            input {
+                    border-right: 1px solid $dark_2;
+                    margin-bottom: 1rem;
+                    width: 100%;
+            }
+            button{
+                width: 100%;
+            }
+        }
+        
+    }
+
+    .blog-mini-wrapper{
+        .blog-part {
+            .info{
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+    }
+}
